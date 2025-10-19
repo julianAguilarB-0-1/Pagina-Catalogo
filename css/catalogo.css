@@ -76,26 +76,10 @@ hr {
     margin-bottom: 50px;
 }
 
-iframe {
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+.precios {
+    font-weight: bold;
+    font-family: 'Anek Telugu';
 
-p a:link {
-    text-decoration: none;
-    color: purple;
-}
-
-p a:hover {
-    color: blue;
-    text-decoration: overline;
-}
-
-i {
-    margin: 10px;
 }
 
 .bloque1 {
@@ -207,4 +191,29 @@ i {
     color: whitesmoke;
     padding: 20px;
     padding-top: 40px;
+}
+
+@media (max-width:1050px) {
+    .conte-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .targeta {
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .desc {
+        width: auto;
+        height: auto;
+    }
+
+    .image img {
+        width: 400px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+
 }
