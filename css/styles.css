@@ -73,13 +73,6 @@ hr {
     margin-bottom: 50px;
 }
 
-iframe {
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 p a:link {
     text-decoration: none;
@@ -134,7 +127,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:initial;
+    position: initial;
     padding: 10px;
 }
 
@@ -166,16 +159,8 @@ i {
     justify-content: space-evenly;
 }
 
-.conte-dire {
-    display: flex;
-    justify-content: space-evenly;
-    ;
-}
 
-.dire {
-    padding: 50px;
-    padding-top: 40px;
-}
+
 
 .conte-conta {
     text-align: justify;
@@ -189,7 +174,40 @@ i {
     padding-left: 500px;
 }
 
+.conte-dire {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
 
+.mapa iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.direccion-info {
+    max-width: 400px;
+    text-align: center;
+}
+
+.dire {
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Anek Telugu';
+}
+
+.img {
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px 1px #000;
+}
 
 .footer {
     width: auto;
@@ -229,10 +247,84 @@ i {
     width: 293px;
 }
 
-.img{
+.img {
     margin-top: 40px;
     margin-left: 40px;
     width: 350px;
     justify-content: center;
     box-shadow: 0 6px 30px 1px #000;
+}
+
+@media (max-width:1050px) {
+    .conte-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .targeta {
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .desc {
+        width: auto;
+        height: auto;
+    }
+
+    .image img {
+        width: 400px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .conte-conta {
+        width: 90%;
+        padding: 20px;
+        padding-left: 20px;
+        box-shadow: none;
+        border-radius: 20px;
+    }
+
+    .rebajas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rebajas img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .logoAca {
+        margin: 0 auto;
+        width: 400px;
+        height: auto;
+        align-items: center;
+    }
+
+    /*Lo del mapa*/
+
+     .conte-dire {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .direccion-info {
+        width: 90%;
+    }
+
+    .img {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
 }
